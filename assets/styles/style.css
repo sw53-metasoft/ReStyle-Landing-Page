@@ -1,0 +1,144 @@
+
+html {
+    color: #333333;
+    font-size: 62.5%;
+    line-height: 1.4;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #333;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: overflow;
+}
+
+/*hero section*/
+#hero_section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#hero_section .hero_img .hero-gradient {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 0 0 0 0rem;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#hero_section .hero_img img {
+    width: 100%; 
+    height: 100%; 
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    z-index: -1;
+    top: 0; 
+    left: 0; 
+    border-radius: 0 0 0 0rem;
+}
+
+#hero_section .hero_text {
+    position: relative;
+    padding: 14rem;
+    z-index: 2; 
+}
+
+#hero_section .hero_text h1 {
+    font-size: 9rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#hero_section .hero_text p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#hero_section .hero_text button {
+    padding: 2.5rem 2.5rem; 
+    margin: 7rem 7rem 0 7;
+    background-color: #2196F3;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    border-radius: 1rem;
+    border: none;
+}
+#hero_section .hero_text button:hover {
+    background-color: #0b7dda;
+    cursor: pointer;
+}
+
+/*responsive 1480px*/
+@media screen and (max-width: 1480px) {
+    #hero_section .hero_text {
+        padding: 18rem;
+    }
+    #hero_section .hero_text h1 {
+        font-size: 7.5rem;
+    }
+    #hero_section .hero_text p {
+        font-size: 2rem;
+    }
+    #hero_section .hero_text button {
+        padding: 2rem 2rem;
+        margin: 5rem 5rem 0 5rem;
+        font-size: 2rem;
+    }
+}
+
+/*responsive 1024px*/
+@media screen and (max-width: 1024px) {
+    #hero_section .hero_text {
+        padding: 15rem;
+    }
+    #hero_section .hero_text h1 {
+        font-size: 6.5rem;
+    }
+    #hero_section .hero_text p {
+        font-size: 2rem;
+    }
+    #hero_section .hero_text button {
+        padding: 2rem 2rem;
+        margin: 5rem 5rem 0 5rem;
+        font-size: 2rem;
+    }
+}
+
+/*responsive 768px*/
+@media screen and (max-width: 768px) {
+    #hero_section .hero_text {
+        padding: 10rem;
+    }
+    #hero_section .hero_text h1 {
+        font-size: 5rem;
+    }
+    #hero_section .hero_text p {
+        font-size: 1.8rem;
+    }
+    #hero_section .hero_text button {
+        padding: 2rem 2rem;
+        margin: 5rem 5rem 0 5rem;
+        font-size: 1.8rem;
+    }
+}
+
+/*end of hero section*/
