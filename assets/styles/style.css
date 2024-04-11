@@ -142,3 +142,103 @@ body {
 }
 
 /*end of hero section*/
+
+/*benefits section*/
+
+#benefits_section {
+    text-align: center;
+}
+
+#benefits_section .benefits_box{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10rem;
+    margin: 0 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#benefits_section h1{
+    font-size: 7rem;
+    font-weight: bolder;
+    color: black;
+}
+
+#benefits_section img{
+    width: 50%;
+}
+
+#benefits_section .benefits_box_left {
+    background-color: #f5f5f5;
+    border-radius: 5rem;
+    padding: 5rem;
+}
+
+#benefits_section .benefits_box_left h2 {
+    color: #003F8F; 
+}
+
+#benefits_section .box_left {
+    background-color: #f5f5f5;
+    border-radius: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: bold;
+}
+
+#benefits_section .box_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: bold;
+}
+
+/*responsive 1024px*/
+@media screen and (max-width: 1024px) {
+    #benefits_section .benefits_box {
+        grid-template-columns: 1fr;
+        padding: 0 2rem 2rem;
+    }
+    #benefits_section h1 {
+        font-size: 5rem;
+    }
+    #benefits_section h2 {
+        font-size: 2rem;
+    }
+    #benefits_section p {
+        font-size: 1.2rem;
+    }
+    #benefits_section .benefits_box_left {
+        padding: 2rem 5rem;
+    }
+
+    #benefits_section .benefits_box_right {
+        padding: 2rem 5rem;
+    }
+}
+
+/*responsive 768px*/
+@media screen and (max-width: 768px) {
+    #benefits_section .benefits_box {
+        grid-template-columns: 1fr;
+        padding: 0 2rem 2rem;
+    }
+    #benefits_section h1 {
+        font-size: 4rem;
+    }
+    #benefits_section h2 {
+        font-size: 2rem;
+    }
+    #benefits_section p {
+        font-size: 1.2rem;
+    }
+    #benefits_section .benefits_box_left {
+        padding: 2rem 5rem;
+    }
+
+    #benefits_section .benefits_box_right {
+        padding: 2rem 5rem;
+    }
+}
+
+/*end of benefits section*/
