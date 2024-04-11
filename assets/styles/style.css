@@ -24,6 +24,101 @@ body {
     display: overflow;
 }
 
+/*Header section*/
+.header{
+    background-color: #3F51B5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 6px 2%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 60px;
+    width: auto ;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;    
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links a{
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links li a:hover {
+    color: #333333;
+}
+
+.boton{
+    align-items: center;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+    top:-13px;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #2196F3;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #2196F3;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.check:checked::after{
+    left:25px;
+    border: 2px solid #ffffff;
+    background: #FFFFFF;
+}
+
+.check:checked::before{
+    background-color: #2196F3;
+}
+
+
 /*hero section*/
 #hero_section {
     display: flex;
