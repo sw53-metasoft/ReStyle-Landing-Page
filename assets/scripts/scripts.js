@@ -9,3 +9,11 @@ function idioma(){
         location.href = "/ReStyle-Langin-Page/index.html"
     }
 }
+
+function openNav(){
+    document.getElementById("mobile-menu") .style.width = "100%";
+}
+
+function closeNav(){
+    document.getElementById("mobile-menu") .style.width = "0%";
+}
