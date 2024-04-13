@@ -648,15 +648,14 @@ body {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .container-form {
+    #contact-us .container-form {
         flex-direction: column-reverse; /* Reverse order on small screens */
     }
 
-    .information-form {
+    #contact-us .information-form {
         order: -1; /* Move information form above the form on small screens */
     }
 }
-
 
 
 
