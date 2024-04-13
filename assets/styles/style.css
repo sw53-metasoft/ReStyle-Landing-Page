@@ -537,6 +537,130 @@ body {
     
 }
 
+/*Styles Section Contact-Us*/
+
+
+/*SECTION CONTACT-US*/
+
+#contact-us {
+    padding: 3%;
+}
+
+/*Estilos del title-contact-us*/
+
+#contact-us .title-contact-us {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+/*Estilos generales de container-form */
+
+#contact-us .container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilos de content-form */
+
+#contact-us .content-form {
+    background-color: #DEDEFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width: 500px;
+    margin: auto;
+}
+
+/*Estilos de form */
+
+#contact-us form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+/*Estilo titulo del form*/
+
+#contact-us .content-form h1 {
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+/*Estilos de input*/
+
+#contact-us form input, label {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+/*Estilos de textarea*/
+
+#contact-us form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #363636;
+}
+
+/*Estilos de button*/
+
+#contact-us form button {
+    padding: 10px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px ;
+    margin: auto;
+}
+
+/*Estilos de information-form */
+
+#contact-us .information-form {
+    text-align: center;
+    margin: auto;
+}
+
+/*Estilos de information-form p*/
+
+#contact-us .information-form p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+/*Estilos de information-form img*/
+
+#contact-us .information-form img {
+    max-width: 500px;
+    height: auto;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container-form {
+        flex-direction: column-reverse; /* Reverse order on small screens */
+    }
+
+    .information-form {
+        order: -1; /* Move information form above the form on small screens */
+    }
+}
+
+
+
+
+
 /*FOOTER*/
 
 .footer{
