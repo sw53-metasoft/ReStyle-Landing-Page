@@ -659,6 +659,31 @@ body {
 
 
 
+/*Styles about-the-team section*/
+
+#about-the-team{
+    padding: 3%;
+    text-align: center;
+}
+/*Estilos generales conatiner-about-the-team*/
+
+#about-the-team .container-about-the-team {
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    padding: 1rem;
+}
+
+#about-the-team img{
+    border: solid black;
+}
+/*Estilos de content-about-the-team*/
+
+#about-the-team .content-about-the-team {
+    margin: auto;
+    max-width: 800px;
+    width: 100%; /* Responsive width */
+}
+
+
 
 /*FOOTER*/
 
