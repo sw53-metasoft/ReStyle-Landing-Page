@@ -1,6 +1,6 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 html {
@@ -106,8 +106,16 @@ body {
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
-    color: #333333;
+    color: #ffffff;
     box-shadow: none;
+    border: 0px;
+    background-color: #3F51B5;
+    font-size: 16px;
+}
+
+.header .menu button:hover{
+    transform: scale(1.1);
+    color: #333333;
 }
 
 .header .logo img{
@@ -247,64 +255,6 @@ body {
     cursor: pointer;
 }
 
-/*responsive 1480px*/
-@media screen and (max-width: 1480px) {
-    #hero_section .hero_text {
-        padding: 18rem;
-    }
-    #hero_section .hero_text h1 {
-        font-size: 7.5rem;
-    }
-    #hero_section .hero_text p {
-        font-size: 2rem;
-    }
-    #hero_section .hero_text button {
-        padding: 2rem 2rem;
-        margin: 5rem 5rem 0 5rem;
-        font-size: 2rem;
-    }
-
-    .header .logo{
-        display: none;
-    }
-
-}
-
-/*responsive 1024px*/
-@media screen and (max-width: 1024px) {
-    #hero_section .hero_text {
-        padding: 15rem;
-    }
-    #hero_section .hero_text h1 {
-        font-size: 6.5rem;
-    }
-    #hero_section .hero_text p {
-        font-size: 2rem;
-    }
-    #hero_section .hero_text button {
-        padding: 2rem 2rem;
-        margin: 5rem 5rem 0 5rem;
-        font-size: 2rem;
-    }
-
-    .header .nav-links{
-        display: none;
-    }
-
-    .header .menu{
-        display: inherit;
-    }
-
-    .header .overlay .close{
-        font-size: 40px;
-        top: 0px;
-        left: 50px;
-    }   
-
-}
-
-
-
 /*end of hero section*/
 
 /*benefits section*/
@@ -324,8 +274,8 @@ body {
 }
 
 #benefits_section h1{
-    margin-top: 20rem;
-    font-size: 7rem;
+    margin-top: 25rem;
+    font-size: 9rem;
     font-weight: bolder;
     color: black;
 }
@@ -356,80 +306,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-weight: bold;
-}
-
-/*responsive 1480px*/
-@media screen and (max-width: 1480px) {
-    #benefits_section .benefits_box {
-        grid-template-columns: 1fr;
-        padding: 0 2rem 2rem;
-    }
-    #benefits_section h1 {
-        margin-top: 20rem;
-        font-size: 5rem;
-    }
-    #benefits_section h2 {
-        font-size: 2rem;
-    }
-    #benefits_section p {
-        font-size: 1.2rem;
-    }
-    #benefits_section .benefits_box_left {
-        padding: 2rem 5rem;
-    }
-
-    #benefits_section .benefits_box_right {
-        padding: 2rem 5rem;
-    }
-}
-
-/*responsive 1024px*/
-@media screen and (max-width: 1024px) {
-    #benefits_section .benefits_box {
-        grid-template-columns: 1fr;
-        padding: 0 2rem 2rem;
-    }
-    #benefits_section h1 {
-        font-size: 5rem;
-    }
-    #benefits_section h2 {
-        font-size: 2rem;
-    }
-    #benefits_section p {
-        font-size: 1.2rem;
-    }
-    #benefits_section .benefits_box_left {
-        padding: 2rem 5rem;
-    }
-
-    #benefits_section .benefits_box_right {
-        padding: 2rem 5rem;
-    }
-}
-
-/*responsive 768px*/
-@media screen and (max-width: 768px) {
-    #benefits_section .benefits_box {
-        grid-template-columns: 1fr;
-        padding: 0 2rem 2rem;
-    }
-    #benefits_section h1 {
-        margin-top: 30rem;
-        font-size: 4rem;
-    }
-    #benefits_section h2 {
-        font-size: 2rem;
-    }
-    #benefits_section p {
-        font-size: 1.2rem;
-    }
-    #benefits_section .benefits_box_left {
-        padding: 2rem 5rem;
-    }
-
-    #benefits_section .benefits_box_right {
-        padding: 2rem 5rem;
-    }
 }
 
 /*end of benefits section*/
@@ -522,19 +398,6 @@ body {
 
 #section-membership .btn:hover {
     background-color: #003f8f;
-}
-
-@media screen and (max-width: 768px) {
-    #section-membership .tarifas {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #section-membership .tarifa {
-        width: 80%;
-    }   
-    
-    
 }
 
 /*Styles Section Contact-Us*/
@@ -646,19 +509,6 @@ body {
 }
 
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    #contact-us .container-form {
-        flex-direction: column-reverse; /* Reverse order on small screens */
-    }
-
-    #contact-us .information-form {
-        order: -1; /* Move information form above the form on small screens */
-    }
-}
-
-
-
 /*Styles about-the-team section*/
 
 #about-the-team{
@@ -683,7 +533,13 @@ body {
     width: 100%; /* Responsive width */
 }
 
+.title-contact-us h1{
+    font-size: 9rem;
+}
 
+.title-about-the-team h1{
+    font-size: 9rem;
+}
 
 /*FOOTER*/
 
@@ -748,10 +604,175 @@ body {
 }
 
 
+/*responsive 1480px*/
+@media screen and (max-width: 1480px) {
+    #benefits_section .benefits_box {
+        grid-template-columns: 1fr;
+        padding: 0 2rem 2rem;
+    }
+    #benefits_section h1 {
+        margin-top: 20rem;
+        font-size: 5rem;
+    }
+    #benefits_section h2 {
+        font-size: 2rem;
+    }
+    #benefits_section p {
+        font-size: 1.2rem;
+    }
+    #benefits_section .benefits_box_left {
+        padding: 2rem 5rem;
+    }
+
+    #benefits_section .benefits_box_right {
+        padding: 2rem 5rem;
+    }
+}
+
+/*responsive 1024px*/
+@media screen and (max-width: 1024px) {
+    #benefits_section .benefits_box {
+        grid-template-columns: 1fr;
+        padding: 0 2rem 2rem;
+    }
+    #benefits_section h1 {
+        font-size: 5rem;
+        margin-top: 0rem;
+    }
+    #benefits_section h2 {
+        font-size: 2rem;
+    }
+    #benefits_section p {
+        font-size: 1.2rem;
+    }
+    #benefits_section .benefits_box_left {
+        padding: 2rem 5rem;
+    }
+
+    #benefits_section .benefits_box_right {
+        padding: 2rem 5rem;
+    }
+    #section-membership h2{
+        font-size: 4rem;
+    }
+
+    .title-contact-us h1{
+        font-size: 7rem;
+    }
+
+    .title-about-the-team h1{
+        font-size: 7rem;
+    }
+}
+
+/*responsive 1024px*/
+@media screen and (max-width: 1024px) {
+    #hero_section .hero_text {
+        padding: 15rem;
+    }
+    #hero_section .hero_text h1 {
+        font-size: 6.5rem;
+    }
+    #hero_section .hero_text p {
+        font-size: 2rem;
+    }
+    #hero_section .hero_text button {
+        padding: 2rem 2rem;
+        margin: 5rem 5rem 0 5rem;
+        font-size: 2rem;
+    }
+
+    .header .nav-links{
+        display: none;
+    }
+
+    .header .menu{
+        display: inherit;
+    }
+
+    .header .overlay .close{
+        font-size: 40px;
+        top: 0px;
+        left: 50px;
+    }   
+
+}
+
 /*responsive 768px*/
 @media screen and (max-width: 768px) {
+    #benefits_section .benefits_box {
+        grid-template-columns: 1fr;
+        padding: 0 2rem 2rem;
+    }
+    #benefits_section h1 {
+        margin-top: 6rem;
+        font-size: 4rem;
+    }
+    #benefits_section h2 {
+        font-size: 2rem;
+    }
+    #benefits_section p {
+        font-size: 1.2rem;
+    }
+    #benefits_section .benefits_box_left {
+        padding: 2rem 5rem;
+    }
+
+    #benefits_section .benefits_box_right {
+        padding: 2rem 5rem;
+    }
+    #section-membership h3{
+        font-size: 16px;
+    }
+}
+
+/*responsive 1480px*/
+@media screen and (max-width: 1480px) {
     #hero_section .hero_text {
-        padding: 10rem;
+        padding: 18rem;
+    }
+    #hero_section .hero_text h1 {
+        font-size: 7.5rem;
+    }
+    #hero_section .hero_text p {
+        font-size: 2rem;
+    }
+    #hero_section .hero_text button {
+        padding: 2rem 2rem;
+        margin: 5rem 5rem 0 5rem;
+        font-size: 2rem;
+    }
+
+    .header .logo{
+        display: none;
+    }
+
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #contact-us .container-form {
+        flex-direction: column-reverse; /* Reverse order on small screens */
+    }
+
+    #contact-us .information-form {
+        order: -1; /* Move information form above the form on small screens */
+    }
+}
+
+/*responsive 768px*/
+@media screen and (max-width: 768px) {
+    #section-membership .tarifas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section-membership .tarifa {
+        width: 80%;
+    }   
+
+    #hero_section .hero_text {
+        padding: 17rem;
     }
     #hero_section .hero_text h1 {
         font-size: 5rem;
