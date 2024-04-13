@@ -4,9 +4,9 @@ check.addEventListener('click',idioma);
 function idioma(){
     let id = check.checked;
     if( id == true){
-        location.href = "/ReStyle-Langin-Page/index.html"
+        location.href = "index.html"
     }else{
-        location.href = "/ReStyle-Langin-Page/index-en.html"
+        location.href = "index-en.html"
     }
 }
 
