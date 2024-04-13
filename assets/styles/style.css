@@ -400,6 +400,101 @@ body {
     background-color: #003f8f;
 }
 
+
+/*SECTION ABOUT THE APP*/
+
+/*about the app*/
+
+#about-the-app-container {
+    display: inline-block;
+    /*flex-wrap: wrap;*/
+    margin: 0 auto;
+    width: 100%;
+}
+
+#about-the-app-container .information {
+    width: 45%;
+    display: inline-block;
+    padding: 20px;
+}
+
+#about-the-app h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-the-app-container .information p {
+    margin-bottom: 15px;
+}
+
+#about-the-app-container .links {
+    width: 45%;
+    display: inline-block;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+#about-the-app-container .video {
+    margin-bottom: 13px;
+}
+
+#about-the-app-container iframe{
+    border-radius: 2rem;
+}
+
+#about-the-app-container .mobile-apps {
+    display: flex;
+    justify-content: center;
+}
+
+#about-the-app-container .mobile-apps img {
+    width: 150px;
+}
+
+#about-the-app-container .icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#about-the-app-container .icons img{
+    margin: 25px 70px;
+    width: 180px;
+}
+#about-the-app .title{
+    padding: 20px;
+}
+#about-the-app-container .product-name{
+    color: #3F51B5;
+}
+
+@media (max-width: 768px) {
+    #about-the-app-container {
+        flex-direction: column;
+    }
+    #about-the-app-container .information,
+    .links {
+        width: 100%;
+    }
+    #about-the-app-container iframe {
+        width: 100%;
+    }
+    #about-the-app-container .icons{
+        flex-direction: column;
+    }
+    #about-the-app-container .icons img {
+        margin: 10px auto;
+    }
+    #about-the-app-container h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
 /*Styles Section Contact-Us*/
 
 
