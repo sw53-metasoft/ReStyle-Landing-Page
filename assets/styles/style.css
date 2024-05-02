@@ -11,6 +11,7 @@ html {
     height: 100%;
     box-sizing: border-box;
     position: relative;
+    overflow-x: hidden;
 }
 
 body {
@@ -152,7 +153,7 @@ body {
 .check{
     position: relative;
     width: 50px;
-    top:-13px;
+    top:-15px;
 }
 
 .check::before{
@@ -178,13 +179,13 @@ body {
 }
 
 .check:checked::after{
-    left:25px;
     border: 2px solid #ffffff;
-    background: #FFFFFF;
+    background: #2196F3;
+    left: 25px;
 }
 
 .check:checked::before{
-    background-color: #2196F3;
+    background-color: #FFFFFF;
 }
 
 
@@ -406,10 +407,11 @@ body {
 /*about the app*/
 
 #about-the-app-container {
-    display: inline-block;
+    display: flex;
     /*flex-wrap: wrap;*/
     margin: 3%;
     width: 100%;
+    align-items: center;
 }
 
 #about-the-app-container .information {
@@ -471,27 +473,7 @@ body {
     color: #3F51B5;
 }
 
-@media (max-width: 768px) {
-    #about-the-app-container {
-        flex-direction: column;
-    }
-    #about-the-app-container .information,
-    .links {
-        width: 100%;
-    }
-    #about-the-app-container iframe {
-        width: 100%;
-    }
-    #about-the-app-container .icons{
-        flex-direction: column;
-    }
-    #about-the-app-container .icons img {
-        margin: 10px auto;
-    }
-    #about-the-app-container h1 {
-        font-size: 2rem;
-    }
-}
+
 
 
 
@@ -558,43 +540,7 @@ body {
     font-style: italic;
 }
 
-@media only screen and (max-width: 960px) {
 
-    #testimonials-section .testimonial-columns {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border-radius: 0;
-    }
-
-    #testimonials-section .left-column,
-    .right-column {
-        width: 100%;
-        margin: 0;
-    }
-
-    #testimonials-section .testimonial {
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem;
-        height: auto;
-    }
-
-    #testimonials-section .profile-img {
-        float: none;
-        margin: 0 auto 1rem;
-    }
-
-    #testimonials-section .information {
-        text-align: center;
-    }
-    #testimonials-section .testimonial img {
-        width: 25%;
-        height: 30%;
-        border-radius: 100%;
-    }
-}
 
 
 /*Styles Section Contact-Us*/
@@ -768,7 +714,8 @@ body {
 }
 
 .footer .Group-1 .box figure img{
-    width: 250px;
+    width: auto;
+    height: 90px;
 }
 
 .footer .Group-1 .box p{
@@ -798,6 +745,10 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+}
+
+#about-the-app-container iframe{
+    width: 100%;
 }
 
 
@@ -860,6 +811,19 @@ body {
     .title-about-the-team h1{
         font-size: 7rem;
     }
+
+    #section-membership .tarifas {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 40px;
+        border-radius: 20px;
+        margin: 2%;
+        flex-wrap: wrap;
+    }
+    #section-membership .tarifa ul{
+        text-align: center;
+    }
 }
 
 /*responsive 1024px*/
@@ -893,13 +857,64 @@ body {
         left: 50px;
     }   
 
+    #about-the-app-container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        margin: 3%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-the-app-container .links{
+        width: 58%;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    #testimonials-section .testimonial-columns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    #testimonials-section .left-column,
+    .right-column {
+        width: 100%;
+        margin: 0;
+    }
+
+    #testimonials-section .testimonial {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        height: auto;
+    }
+
+    #testimonials-section .profile-img {
+        float: none;
+        margin: 0 auto 1rem;
+    }
+
+    #testimonials-section .information {
+        text-align: center;
+    }
+    #testimonials-section .testimonial img {
+        width: 25%;
+        height: 30%;
+        border-radius: 100%;
+    }
 }
 
 /*responsive 768px*/
 @media screen and (max-width: 768px) {
     #benefits_section .benefits_box {
         grid-template-columns: 1fr;
-        padding: 0 2rem 2rem;
+        padding: 0 0rem 0rem;
     }
     #benefits_section h1 {
         margin-top: 6rem;
@@ -912,14 +927,18 @@ body {
         font-size: 1.2rem;
     }
     #benefits_section .benefits_box_left {
-        padding: 2rem 5rem;
+        padding: 0rem 0rem;
     }
 
     #benefits_section .benefits_box_right {
-        padding: 2rem 5rem;
+        padding: 0rem 0rem;
     }
     #section-membership h3{
         font-size: 16px;
+    }
+
+    #about-the-app-container iframe{
+        width: 100%;
     }
 }
 
@@ -944,6 +963,10 @@ body {
         display: none;
     }
 
+    #about-the-app-container iframe{
+        width: 100%;
+    }
+
 }
 
 /* Media Queries for Responsiveness */
@@ -956,6 +979,8 @@ body {
         order: -1; /* Move information form above the form on small screens */
     }
 }
+
+
 
 /*responsive 768px*/
 @media screen and (max-width: 768px) {
